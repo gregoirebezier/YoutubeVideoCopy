@@ -2,9 +2,12 @@ This is a script to download any Youtube videos when you "CTRL C" the URL of a v
 -----------------
 How to use it : <br/>
 ```
-pip3 install -r requirements.txt <br />
-cd queue/ <br />
-celery -A main worker --loglevel=info <br/>
-Open other terminal : <br/>
-./YoutubeCopy.py <br/>
+pip3 install -r requirements.txt 
+cd queue/ 
+celery -A main worker --loglevel=info 
+
+      -------------
+
+Open other terminal : 
+./YoutubeCopy.py 
 ```
