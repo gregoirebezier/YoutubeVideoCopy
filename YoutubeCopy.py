@@ -14,6 +14,6 @@ def GetYoutubeCopy():
             if (link[:32] == "https://www.youtube.com/watch?v=" and PreviousLink != link):
                 celery.send_task('tasks.GetYoutube', args=[link], kwargs={})
                 PreviousLink = link
-                sleep(1)
         except:
             sleep(1)
+GetYoutubeCopy()
